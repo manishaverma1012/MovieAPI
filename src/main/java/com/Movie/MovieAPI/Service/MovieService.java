@@ -21,8 +21,8 @@ public class MovieService {
         return movieRepository.findAll();
 
     }
-    public Optional<Movie> SingleMovie(ObjectId Id) //optional movie will say that if null id will be given then Optional class will handle this;
+    public Optional<Movie> SingleMovie(String imdbId) //optional movie will say that if null id will be given then Optional class will handle this;
     {
-        return movieRepository.findById(Id);
+        return movieRepository.findMovieByimdbId(imdbId);
     }
 }
