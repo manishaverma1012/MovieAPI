@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
 import java.util.List;
 
-@Document(collection = "movies")//name of the table
+@Document(collection = "Moviedata")//name of the table
 @Data//takes care of getter setter method extract from lambok
 @AllArgsConstructor //creating
 public class Movie {
